@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+    themes: all;
+}
+
+.default-background {
+    @apply flex items-center justify-center h-screen
+}
+
+.loader {
+    @apply size-10 animate-spin
+}
+
+.navbar-header {
+    @apply bg-base-100 border-b border-base-300 fixed w-full top-0 z-40 backdrop-blur-lg bg-base-100/80
+}
+
+.navbar-header-container {
+    @apply container mx-auto px-4 h-16
+}
+
+.navbar-header-container-box {
+    @apply flex items-center justify-between h-full
+}
+
+.navbar-header-container-box-left {
+    @apply flex items-center gap-8
+}
+
+.navbar-header-container-box-right {
+    @apply flex items-center gap-2
+}
+
+.navbar-header-logo-link {
+    @apply flex items-center gap-2.5 hover:opacity-80 transition-all
+}
+
+.navbar-header-logo-link-icon {
+    @apply size-9 rounded-lg bg-primary/10 flex items-center justify-center
+}
+
+.navbar-header-logo-link-text {
+    @apply text-lg font-bold
+}
+
+.navbar-header-link-settings {
+    @apply btn btn-sm gap-2 transition-colors
+}
+
+.navbar-header-link-profile {
+    @apply btn btn-sm gap-2
+}
+
+.navbar-header-link-text {
+    @apply hidden sm:inline
+}
+
+.navbar-header-btn-logout {
+    @apply flex gap-2 items-center
+}
+
+.signup-page-grid-2 {
+    @apply min-h-screen grid lg:grid-cols-2
+}
+
+.signup-container-left {
+    @apply flex flex-col justify-center items-center p-6 sm:p-12
+}
+
+.signup-container-form-box {
+    @apply w-full max-w-md space-y-8
+}
+
+.signup-container-form-header {
+    @apply text-center mb-8
+}
+
+.singup-form-logo {
+    @apply size-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors
+}
+
+.signup-container-right {
+    @apply hidden lg:flex items-center justify-center bg-base-200 p-12
+}
+
+.signup-container-right-title {
+    @apply text-2xl font-bold mb-4
+}
+
+.signup-container-right-subtitle {
+    @apply text-base-content/60
+}
+
+.signup-container-right-9-boxes {
+    @apply grid grid-cols-3 gap-3 mb-8
+}
+
+.settings-container {
+    @apply h-screen container mx-auto px-4 pt-20 max-w-5xl
+}
+
+.settings-container-box {
+    @apply space-y-6
+}
+
+.settings-container-header {
+    @apply flex flex-col gap-1
+}
+
+.settings-container-content {
+    @apply grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-2
+}
+
+.settings-container-preview {
+    @apply rounded-xl border border-base-300 overflow-hidden bg-base-100 shadow-lg
+}
